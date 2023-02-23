@@ -1,0 +1,28 @@
+{
+	"blog-scm-01": {
+		"name": "blog-scm-01",
+		"fileName": "blog-scm-01.html",
+		"img": "img-blog/scm-01.png",
+		"date": "2023-01-20",
+		"url": "blog-scm-01.html",
+		"author": "Oliver Kutiš",
+		"title": "INKREMENTALITA - INTRO (pt. 1)",
+		"subtitle": "Kvázi-exprimentálne metódy a ich využitie v marketingu",
+		"category": "Inkrementalita",
+		"tags": ["Data Science", "Inkrementalita", "Marketing", "Kauzalita"],
+		"description": "Prečo pre vyhodnotenie väčších a dôležitých kampaní nie je vhodné spoliehať sa na dáta z Google Analytics?"
+	},
+	"blog-scm-02": {
+		"name": "blog-scm-02",
+		"fileName": "blog-scm-02.html",
+		"img": "img-blog/scm-02.jpeg",
+		"date": "2023-02-01",
+		"url": "blog-scm-02.html",
+		"author": "Oliver Kutiš",
+		"title": "INKREMENTALITA - INTRO (pt. 2)",
+		"subtitle": "Metóda syntetickej kontrolnej premennej",
+		"category": "Inkrementalita",
+		"tags": ["Data Science", "Inkrementalita", "Marketing", "Kauzalita"],
+		"description": "Praktický príklad využitia kvázi-kauzálnych metód na vyhodnotenie vplyvu kampane."
+	}
+}
