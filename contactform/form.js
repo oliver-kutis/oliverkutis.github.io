@@ -157,6 +157,11 @@ $(document).ready(function () {
 				window.dataLayer.push({
 					event: 'form_submit',
 					form_subject: formData.subject,
+					form_message: formData.message,
+					user_data: {
+						email: formData.email,
+						name: formData.name,
+					},
 				});
 			})
 			.fail(function (jqXHR, _, errorThrown) {
