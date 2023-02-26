@@ -160,7 +160,10 @@ $(document).ready(function () {
 					form_message: formData.message,
 					user_data: {
 						email: formData.email,
-						name: formData.name,
+						address: {
+							first_name: formData.name.split(' ')[0],
+							last_name: formData.name.split(' ')[1],
+						},
 					},
 				});
 			})
@@ -176,4 +179,30 @@ $(document).ready(function () {
 			});
 	});
 });
-// });
+
+$('document').ready(function () {
+	'use strict';
+
+	const form = $('form.contactForm').find('.form-group');
+	const textarea = form.children('textarea');
+	const inputs = form.children('input');
+	const inputFields = [...inputs, ...textarea];
+	console.log(inputFields);
+	// const inputs = [...form.find('input'), form.find('textarea')];
+
+	const eventHandler = function (e) {
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			event: 'form_start',
+			form_field: e.target.name,
+		});
+		e.target.removeEventListener('click', eventHandler, false);
+	};
+	let i = 0;
+	inputFields.forEach(function (e) {
+		if (e.type === 'hidden') return;
+		if (i > 0) return;
+		e.addEventListener('click', eventHandler, false);
+		i += 1;
+	});
+});
