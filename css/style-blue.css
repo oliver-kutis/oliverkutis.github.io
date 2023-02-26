@@ -89,7 +89,7 @@ a:hover {
 	background-position: center center;
 	background-color: #224275;
 	/* background-color: black; */
-	opacity: 0.7;
+	/* opacity: 0.7; */
 }
 
 /* .overlay-mf {
@@ -104,7 +104,7 @@ a:hover {
 	height: 100%;
 	width: 100%;
 	background-color: #224275;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .paralax-mf {
@@ -645,13 +645,13 @@ a:hover {
 .intro .intro-title {
 	color: #fff;
 	font-weight: 600;
-	font-size: 3rem;
+	font-size: 4rem;
 	/* comment-font-size: 3rem; */
 	/* opacity: 1; */
 }
 
 .intro .intro-subtitle {
-	font-size: 1.5rem;
+	font-size: 2.2rem;
 	font-weight: 300;
 }
 
