@@ -126,6 +126,7 @@ $(document).ready(function () {
 			name: $('#name').val(),
 			email: $('#email').val(),
 			subject: $('#subject').val(),
+			source: $('#source').val(),
 			message: $("textarea.form-control[name='message']").val(),
 		};
 
@@ -153,11 +154,13 @@ $(document).ready(function () {
 				$('#sendmessage').addClass('show');
 				$('form').each((i, f) => f.reset()); //.reset();
 				// GTM event
+				console.log(formData);
 				window.dataLayer = window.dataLayer || [];
 				window.dataLayer.push({
 					event: 'form_submit',
 					form_subject: formData.subject,
 					form_message: formData.message,
+					form_source: formData.source,
 					user_data: {
 						email: formData.email,
 						address: {

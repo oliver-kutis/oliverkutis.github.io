@@ -587,10 +587,10 @@
 																name="subject"
 																id="subject"
 																placeholder="Predmet"
-																data-rule="minlen:4"
+																data-rule="minlen:8"
 																data-msg="Prosím zadajte predmet, ktorý má aspoň 8 znakov"
 															/>
-															<input 
+															<!-- <input 
 																type="hidden" 
 																name="_next" 
 																style="display:none"
@@ -599,6 +599,34 @@
 																type="hidden" 
 																name="_captcha" 
 																value="false"
+															/> -->
+															<div
+																class="validation"
+															></div>
+														</div>
+													</div>
+													<!-- Honeypot and captcha disable (START) -->
+													<input 
+													type="hidden" 
+													name="_next" 
+													style="display:none"
+													/>
+													<input 
+													type="hidden" 
+													name="_captcha" 
+													value="false"
+													/>
+													<!-- Honeypot and captcha disable (END) -->
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																name="source"
+																id="source"
+																placeholder="Odkiaľ ste sa o mňa dozvedeli?"
+																data-rule="minlen:4"
+																data-msg="Tento údaj je pre mňa dôležitý"
 															/>
 															<div
 																class="validation"
