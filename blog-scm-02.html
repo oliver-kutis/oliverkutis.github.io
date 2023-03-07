@@ -2,24 +2,46 @@
 <html lang="en">
 	<head>
 		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-KRJ4K2N');</script>
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js',
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-KRJ4K2N');
+		</script>
 		<!-- End Google Tag Manager -->
-		
+
 		<meta charset="utf-8" />
 		<title>BLOG | Metóda syntetickej kontrolnej premennej</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 		<!-- <meta content="" name="keywords" /> -->
-		<meta content="Praktický príklad využitia kvázi-kauzálnych metód na vyhodnotenie vplyvu kampane." name="description" />
-		<meta property="og:title" content="BLOG | Metóda syntetickej kontrolnej premennej" />
+		<meta
+			content="Praktický príklad využitia kvázi-kauzálnych metód na vyhodnotenie vplyvu kampane."
+			name="description"
+		/>
+		<meta
+			property="og:title"
+			content="BLOG | Metóda syntetickej kontrolnej premennej"
+		/>
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://oliverkutis.blog/blog-scm-02" />
+		<meta
+			property="og:url"
+			content="https://oliverkutis.blog/blog-scm-02"
+		/>
 		<meta property="og:image" content="img-blog/scm-02.jpeg" />
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="og:description" content="Praktický príklad využitia kvázi-kauzálnych metód na vyhodnotenie vplyvu kampane." />
+		<meta
+			property="og:description"
+			content="Praktický príklad využitia kvázi-kauzálnych metód na vyhodnotenie vplyvu kampane."
+		/>
 		<meta property="og:site_name" content="Oliver Kutiš" />
 		<meta name="twitter:image:alt" content="Oliver Kutiš" />
 		<meta name="twitter:site" content="@OliverKutis" />
@@ -28,14 +50,31 @@
 		<!-- <link href="img/favicon.png" rel="icon" />
 		<link href="img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
-
-		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-		<link rel="manifest" href="img/site.webmanifest">
-		<link rel="mask-icon" href="img-safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#2b5797">
-		<meta name="theme-color" content="#ffffff">
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="img/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="img/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="img/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="img-safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#2b5797" />
+		<meta name="theme-color" content="#ffffff" />
 
 		<!-- Bootstrap CSS File -->
 		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -66,8 +105,14 @@
 
 	<body>
 		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRJ4K2N"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-KRJ4K2N"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
 		<!--/ Nav Star /-->
@@ -76,7 +121,9 @@
 			id="mainNav"
 		>
 			<div class="container">
-				<a class="navbar-brand js-scroll" href="index.html#page-top">OLIVER KUTIŠ</a>
+				<a class="navbar-brand js-scroll" href="index.html#page-top"
+					>OLIVER KUTIŠ</a
+				>
 				<button
 					class="navbar-toggler collapsed"
 					type="button"
@@ -101,19 +148,33 @@
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll" href="index.html#about">O mne</a>
+							<a
+								class="nav-link js-scroll"
+								href="index.html#about"
+								>O mne</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll" href="index.html#services">Služby</a>
+							<a
+								class="nav-link js-scroll"
+								href="index.html#services"
+								>Služby</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll" href="index.html#work">Práca</a>
+							<a class="nav-link js-scroll" href="index.html#work"
+								>Práca</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll" href="blog.html">Blog</a>
+							<a class="nav-link js-scroll" href="blog.html"
+								>Blog</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll" href="#contact">Kontakt</a>
+							<a class="nav-link js-scroll" href="#contact"
+								>Kontakt</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -126,15 +187,19 @@
 			class="intro intro-single route bg-image"
 			style="background-image: url(img/overlay-bg.jpg)"
 		>
-			<input type="hidden" id="blogArticleCreateDate" value="2023-02-01" />
+			<input
+				type="hidden"
+				id="blogArticleCreateDate"
+				value="2023-02-01"
+			/>
 			<div class="overlay-mf"></div>
 			<div class="intro-content display-table">
 				<div class="table-cell">
 					<div class="container">
-						<h2 class="intro-title mb-4" style="font-size: 2.5rem">
-                            <u>INKREMENTALITA - INTRO (pt. 2):</u> 
-                            <br />Metóda syntetickej kontrolnej premennej
-                        </h2>
+						<h2 class="intro-title mb-4" style="font-size: 1.8rem">
+							<u>INKREMENTALITA - INTRO (pt. 2):</u>
+							<br />Metóda syntetickej kontrolnej premennej
+						</h2>
 						<ol class="breadcrumb d-flex justify-content-center">
 							<li class="breadcrumb-item">
 								<a href="#">Home</a>
@@ -165,8 +230,9 @@
 							</div> -->
 							<div class="post-meta">
 								<h1 class="article-title">
-									<u>INKREMENTALITA - INTRO (pt. 2):</u> 
-                                    <br />Metóda syntetickej kontrolnej premennej
+									<u>INKREMENTALITA - INTRO (pt. 2):</u>
+									<br />Metóda syntetickej kontrolnej
+									premennej
 								</h1>
 								<ul>
 									<li>
@@ -178,7 +244,9 @@
 										<a href="#">Inkrementalita</a>
 									</li>
 									<li>
-										<span class="ion-ios-clock-outline"></span>
+										<span
+											class="ion-ios-clock-outline"
+										></span>
 										<a href="#">5 min.</a>
 									</li>
 								</ul>
@@ -186,104 +254,136 @@
 							<div class="article-content">
 								<p>
 									V minulom príspevku sme si predstavili
-                                    možnosť využitia kvázi-kauzálnych metód
-                                    pre vyhodnocovanie marketingových kampaní.
-                                    V tomto príspevku sa bližšie pozrieme
-                                    na jednu z nich. Táto metóda sa nazýva
-                                    Synthetic Control Method (SCM) a využíva
-                                    sa približne 10 rokov. Je nutné dodať,
-                                    že tak ako každý prístup, aj tento má
-                                    svoje variácie. Google prišiel s jednou, 
-                                    ktorá by mohla marketérom veľmi uľahčiť 
-                                    život a dokonca ju implementoval v jazyku
-                                    R (existujú aj Python implementácie) <strong>[1]</strong>. 
-                                </p>
-                                <p>
-                                    Ako už bolo povedané, táto metóda má
-                                    hlavné využitie keď nemôžme vykonať
-                                    klasický experiment (A/B test). 
-                                    Dôvody môžu byť také, že to platforma,
-                                    v ktorej kampaň spúšťate neumožňuje 
-                                    alebo z nej nedokážete obdržať kauzálny efekt.
-                                    Ďalší dôvod môže byť, že nedokážete vytvoriť skupinu,
-                                    ktorej by sa kampaň netýkala (napr. kampaň v televízii).
-                                </p>
-								<p>
-									<strong>🧑🏻‍💻 Táto metóda má niekoľko predpokladov:</strong>
-									<br />
-                                    <ul>
-                                        <li> nutnosť stanoviť si čo má 
-                                            kampaň docieliť a pred jej samotným 
-                                            spustením zistiť, či sa nedá získať
-                                             kontrolné jednotky (ktorých kampaň neovplyvní)
-                                        </li>
-                                        <li> nutnosť špecifikovať, ktoré metriky
-                                             môžu byť kampaňou ovplyvnené a ktoré nie
-                                        </li>
-                                        <li> potrebujete mať k dispozícii dostatočný
-                                             počet období pred spustením kampane</li>
-                                        <li>je dobré mať k dispozícii dáta (v rovnakej
-                                            frekvencii), ktorých sa kampaň netýkala (
-                                            tzv. Donor pool) - nemusí sa nutne jednať
-                                             o dáta s rovnakou jednotkou 
-                                             (bude vysvetlené na príklade)
-                                        </li> 
-                                </ul>
-                                </p>
-								<p>
-									<strong>📈 Poďme sa teraz pozrieť na skutočný príklad z praxe: </strong>
-									<br />
-									Budeme vyhodnocovať efekt kampane v Google Search
-                                    , ktorá bola naviazaná na špecifické kľúčové slová (keywords).
-                                    Bude nás zaujímať aký je efekt tejto kampane na návštevnosť.
-                                    Keďže nám návštevnosť môžu skresľovať cookie lišty a ad-blockre, 
-                                    tak pre nás budú najspoľahlivejšími dátami platené a organické kliknutia <strong>[2]</strong>.
-                               </p> 
-                               <p>
-                                    V Google Ads máme možnosť aplikovať kampaň iba na niektoré lokality. 
-                                    Môžeme teda náhodne zvoliť tie, kde kampaň spustíme a tie, kde kampaň nespustíme.
-                                    Tie, kde kampaň nespustíme môžeme použiť na zostavenie Syntetickej 
-                                    kontrolnej premennej (ako napovedá aj názov tejto metódy).
-                                    Ak by nebolo možné aplikovať kampaň na kontrolné regióny, 
-                                    môžeme využiť iný prístup --> na zostavenie syntetickej kontrolnej
-                                     premennej použiť kľúčové slová, ktorých sa kampaň netýkala. 
-                                     Teoreticky by sme na zostavenie kontrolnej premennej vždy mohli použiť
-                                      aj dáta z Google Trends (ak nepredpokladáme, 
-                                      že kampaň pohne celým trhom).
+									možnosť využitia kvázi-kauzálnych metód pre
+									vyhodnocovanie marketingových kampaní. V
+									tomto príspevku sa bližšie pozrieme na jednu
+									z nich. Táto metóda sa nazýva Synthetic
+									Control Method (SCM) a využíva sa približne
+									10 rokov. Je nutné dodať, že tak ako každý
+									prístup, aj tento má svoje variácie. Google
+									prišiel s jednou, ktorá by mohla marketérom
+									veľmi uľahčiť život a dokonca ju
+									implementoval v jazyku R (existujú aj Python
+									implementácie) <strong>[1]</strong>.
 								</p>
-                                <p>
-                                    Keď máme všetko pripravené, môžeme spustiť analýzu.
-                                    Výsledky je nápomocné prezentovať pomocou grafov, 
-                                    pretože je vidno to ako použitý model <strong>[3]</strong> 
-                                    funguje alebo nefunguje. Ako zistíte, že modelu môžete 
-                                    dôverovať? Dobrým indikátorom sú bledo modré intervaly (graf),
-                                     ktoré ohraničujú v akých medziach sa efekt kampane pohybuje. 
-                                     Ďalším indikátorom je, že po vypnutí kampane sa skutočné dáta 
-                                     vrátia na rovnakú úroveň na akej je odhadnutá syntetická kontrolná
-                                      premenná (druhá zvislá čiarkovaná čiara).
-                                </p>
-                                <div class="post-thumb">
-                                    <img
-                                        src="img-blog/scm-02.jpeg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <br />
+								<p>
+									Ako už bolo povedané, táto metóda má hlavné
+									využitie keď nemôžme vykonať klasický
+									experiment (A/B test). Dôvody môžu byť také,
+									že to platforma, v ktorej kampaň spúšťate
+									neumožňuje alebo z nej nedokážete obdržať
+									kauzálny efekt. Ďalší dôvod môže byť, že
+									nedokážete vytvoriť skupinu, ktorej by sa
+									kampaň netýkala (napr. kampaň v televízii).
+								</p>
+								<p>
+									<strong
+										>🧑🏻‍💻 Táto metóda má niekoľko
+										predpokladov:</strong
+									>
+									<br />
+								</p>
+								<ul>
+									<li>
+										nutnosť stanoviť si čo má kampaň
+										docieliť a pred jej samotným spustením
+										zistiť, či sa nedá získať kontrolné
+										jednotky (ktorých kampaň neovplyvní)
+									</li>
+									<li>
+										nutnosť špecifikovať, ktoré metriky môžu
+										byť kampaňou ovplyvnené a ktoré nie
+									</li>
+									<li>
+										potrebujete mať k dispozícii dostatočný
+										počet období pred spustením kampane
+									</li>
+									<li>
+										je dobré mať k dispozícii dáta (v
+										rovnakej frekvencii), ktorých sa kampaň
+										netýkala ( tzv. Donor pool) - nemusí sa
+										nutne jednať o dáta s rovnakou jednotkou
+										(bude vysvetlené na príklade)
+									</li>
+								</ul>
+								<p>
+									<strong
+										>📈 Poďme sa teraz pozrieť na skutočný
+										príklad z praxe:
+									</strong>
+									<br />
+									Budeme vyhodnocovať efekt kampane v Google
+									Search , ktorá bola naviazaná na špecifické
+									kľúčové slová (keywords). Bude nás zaujímať
+									aký je efekt tejto kampane na návštevnosť.
+									Keďže nám návštevnosť môžu skresľovať cookie
+									lišty a ad-blockre, tak pre nás budú
+									najspoľahlivejšími dátami platené a
+									organické kliknutia <strong>[2]</strong>.
+								</p>
+								<p>
+									V Google Ads máme možnosť aplikovať kampaň
+									iba na niektoré lokality. Môžeme teda
+									náhodne zvoliť tie, kde kampaň spustíme a
+									tie, kde kampaň nespustíme. Tie, kde kampaň
+									nespustíme môžeme použiť na zostavenie
+									Syntetickej kontrolnej premennej (ako
+									napovedá aj názov tejto metódy). Ak by
+									nebolo možné aplikovať kampaň na kontrolné
+									regióny, môžeme využiť iný prístup --> na
+									zostavenie syntetickej kontrolnej premennej
+									použiť kľúčové slová, ktorých sa kampaň
+									netýkala. Teoreticky by sme na zostavenie
+									kontrolnej premennej vždy mohli použiť aj
+									dáta z Google Trends (ak nepredpokladáme, že
+									kampaň pohne celým trhom).
+								</p>
+								<p>
+									Keď máme všetko pripravené, môžeme spustiť
+									analýzu. Výsledky je nápomocné prezentovať
+									pomocou grafov, pretože je vidno to ako
+									použitý model <strong>[3]</strong>
+									funguje alebo nefunguje. Ako zistíte, že
+									modelu môžete dôverovať? Dobrým indikátorom
+									sú bledo modré intervaly (graf), ktoré
+									ohraničujú v akých medziach sa efekt kampane
+									pohybuje. Ďalším indikátorom je, že po
+									vypnutí kampane sa skutočné dáta vrátia na
+									rovnakú úroveň na akej je odhadnutá
+									syntetická kontrolná premenná (druhá zvislá
+									čiarkovaná čiara).
+								</p>
+								<div class="post-thumb">
+									<img
+										src="img-blog/scm-02.jpeg"
+										class="img-fluid"
+										alt=""
+										style="display: block; margin-left: auto; margin-right: auto; width: 100%;"
+									/>
+								</div>
+								<br />
 								<p>
 									<strong>Zdroje a poznámky:</strong>
-                                    <br />
-                                    [1] <a style="color: #224275" href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41854.pdf">Kay H. Brodersen Fabian Gallusser Jim Koehler Nicolas Remy Steven L. Scott Annals of Applied Statistics, vol. 9 (2015), pp. 247-274
-                                    </a>
-                                    <br />
-                                    [2] Platené kliknutia pred spustením kampane nemáme. 
-                                    Organické a platené kliknutia sa však vzájomne 
-                                    kanibalizujú a preto by nemalo zmysel použiť iba 
-                                    organické alebo platené. 
-                                    <br />
-                                    [3] CausalImpact knižnica umožňuje použitie viacerých
-                                     špecifikácií modelu. Je dobré aspoň trochu rozumieť tomu,
-                                      kedy niektorú použiť a kedy nie.
+									<br />
+									[1]
+									<a
+										style="color: #224275"
+										href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/41854.pdf"
+										>Kay H. Brodersen Fabian Gallusser Jim
+										Koehler Nicolas Remy Steven L. Scott
+										Annals of Applied Statistics, vol. 9
+										(2015), pp. 247-274
+									</a>
+									<br />
+									[2] Platené kliknutia pred spustením kampane
+									nemáme. Organické a platené kliknutia sa
+									však vzájomne kanibalizujú a preto by nemalo
+									zmysel použiť iba organické alebo platené.
+									<br />
+									[3] CausalImpact knižnica umožňuje použitie
+									viacerých špecifikácií modelu. Je dobré
+									aspoň trochu rozumieť tomu, kedy niektorú
+									použiť a kedy nie.
 								</p>
 								<!-- <blockquote class="blockquote">
 									<p class="mb-0">
@@ -467,7 +567,7 @@
 							</form>
 						</div> -->
 					</div>
-					<div class="col-md-4">
+					<!-- <div class="col-md-4">
 						<div class="widget-sidebar sidebar-search">
 							<h5 class="sidebar-title">Search</h5>
 							<div class="sidebar-content">
@@ -524,7 +624,7 @@
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 						<!-- <div class="widget-sidebar">
 							<h5 class="sidebar-title">Archives</h5>
 							<div class="sidebar-content">
@@ -554,7 +654,7 @@
 								</ul>
 							</div>
 						</div> -->
-						<div class="widget-sidebar widget-tags">
+						<!-- <div class="widget-sidebar widget-tags">
 							<h5 class="sidebar-title">Tags</h5>
 							<div class="sidebar-content">
 								<ul>
@@ -572,7 +672,7 @@
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -600,18 +700,21 @@
 										<div>
 											<!-- action="https://formsubmit.co/74ffc38f73956b55619c7450b256f8f3" -->
 											<form
-											method="post"
-											role="form"
-											class="contactForm"
+												method="post"
+												role="form"
+												class="contactForm"
 											>
 												<div id="sendmessage">
 													Vaša správa bola odoslaná.
 													Ďakujem!
 												</div>
 												<div id="errormessage">
-													Niečo sa pokazilo, prosím kontaktuje ma 
-													na adrese 
-													<href="mailto:analytika.oliver.kutis@gmail.com>analytika.oliver.kutis@gmail.com</href>
+													Niečo sa pokazilo, prosím
+													kontaktuje ma na adrese
+													<href
+														="mailto:analytika.oliver.kutis@gmail.com"
+														>analytika.oliver.kutis@gmail.com</href
+													>
 												</div>
 												<div class="row">
 													<div class="col-md-12 mb-3">
@@ -673,15 +776,15 @@
 														</div>
 													</div>
 													<!-- Honeypot and captcha disable (START) -->
-													<input 
-													type="hidden" 
-													name="_next" 
-													style="display:none"
+													<input
+														type="hidden"
+														name="_next"
+														style="display: none"
 													/>
-													<input 
-													type="hidden" 
-													name="_captcha" 
-													value="false"
+													<input
+														type="hidden"
+														name="_captcha"
+														value="false"
 													/>
 													<!-- Honeypot and captcha disable (END) -->
 													<div class="col-md-12 mb-3">
@@ -730,9 +833,7 @@
 									</div>
 									<div class="col-md-6">
 										<div class="title-box-2 pt-4 pt-md-0">
-											<h5 class="title-left">
-												Kontakt 
-											</h5>
+											<h5 class="title-left">Kontakt</h5>
 										</div>
 										<div class="more-info">
 											<!-- <p class="lead">
@@ -756,20 +857,29 @@
 													<span
 														class="ion-ios-telephone"
 													></span>
-													<a style=color:#224275 href="tel:+420 720 276 662">+420 720 276 662</a>
+													<a
+														style="color: #224275"
+														href="tel:+420 720 276 662"
+														>+420 720 276 662</a
+													>
 												</li>
 												<li>
 													<span
 														class="ion-email"
 													></span>
-													<a style=color:#224275 href="mailto:analytika.oliver.kutis@gmail.com">analytika.oliver.kutis@gmail.com</a>
+													<a
+														style="color: #224275"
+														href="mailto:analytika.oliver.kutis@gmail.com"
+														>analytika.oliver.kutis@gmail.com</a
+													>
 												</li>
 											</ul>
 										</div>
 										<div class="socials">
 											<ul>
 												<li>
-													<a href="https://www.facebook.com/oliver.kutis/"
+													<a
+														href="https://www.facebook.com/oliver.kutis/"
 														><span
 															class="ico-circle"
 															><i
@@ -778,7 +888,8 @@
 													></a>
 												</li>
 												<li>
-													<a href="https://twitter.com/OliverKutis"
+													<a
+														href="https://twitter.com/OliverKutis"
 														><span
 															class="ico-circle"
 															><i
@@ -787,7 +898,8 @@
 													></a>
 												</li>
 												<li>
-													<a href="https://www.linkedin.com/in/oliver-kutiš-5248a1179/"
+													<a
+														href="https://www.linkedin.com/in/oliver-kutiš-5248a1179/"
 														><span
 															class="ico-circle"
 															><i
